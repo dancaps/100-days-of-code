@@ -39,10 +39,8 @@ while is_game_running:
         scoreboard.game_over()
 
     # Hits the body.
-    for segment in snake.segments:
-        if segment == snake.head:
-            pass
-        elif snake.head.distance(segment) < 10:
+    for segment in snake.segments[1:]:
+        if snake.head.distance(segment) < 10:
             is_game_running = False
             scoreboard.game_over()
 
