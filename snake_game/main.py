@@ -23,7 +23,7 @@ screen.onkey(snake.right, "Right")
 
 is_game_running = True
 while is_game_running:
-    sleep(.05)
+    sleep(.1)
     screen.update()
     snake.move()
 
